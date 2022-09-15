@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>all question answer </title>
+</head>
+<body>
+    <main>
+        <section>
+            <div>
+                <h1>Local Storage and Session Storage Difference</h1>
+                <p> <b>Local Storage: </b> This read-only interface property provides access to the Documents local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends  that is when the page is closed. It is cleared when the last private tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session). DOMStrings are storage formats that use UTF-16 to encode data, which uses two bytes per character. Strings are automatically generated from integer keys just as they are for objects. The data stored in LocalStorage is specific to a protocol in the document.</p>
+            </div>
+            <div>
+                <p> <b>Session Storage: </b> Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends. A unique page session gets created once a document is loaded in a browser tab. Page sessions are valid for only one tab at a time. Pages are only saved for the amount of time that the tab or the browser is open; they do not persist after the page reloads and restores. A new session is created each time a tab or window is opened; this is different from session cookies. Each tab/window that is opened with the same URL creates its own sessionStorage.When you duplicate a tab, the sessionStorage from the original tab is copied to the duplicated tab. Closing a window/tab ends the session and clears sessionStorage objects. a pages protocol determines what data is stored in sessionStorage. Particularly, data stored by scripts accessed through HTTP is stored in a separate object from the same site accessed through HTTPS. A DOMString number is two bytes per character in UTF-16 DOMString format. Strings are automatically generated from integer keys just as they are for objects.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>Differences Between Local Scope and Global Scope Variable</h1>
+                <p> <b>Global scope : </b> Global scope contains all of the things defined outside of all code blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure that create a code block. A global variable has global scope. A global variable is accessible from anywhere in the code.</p>
+            </div>
+            <div>
+                <p> <b>Local Scope: </b> Local scope contains things defined inside code blocks. A local variable has local scope. A local variable is only accessible where its declared. In a scope, you can access variables defined in that scope, or in any parent/ancestor scope. It can only be accessed by the function statements in which it is declared and not by the other functions. </p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1>How works JavaScript Event Loop</h1>
+                <p> Well start with a somewhat of an odd claim — despite allowing async JavaScript code like the setTimeout we just discussed, until ES6, JavaScript itself has actually never had any direct notion of asynchronicity built into it. The JavaScript engine has never done anything more than executing a single chunk of your program at any given moment. For more details on how JavaScript engines work Googles V8 specifically, check one of our previous articles on the topic.
+                So, who tells the JS Engine to execute chunks of your program? In reality, the JS Engine doesn't run in isolation — it runs inside a hosting environment, which for most developers is the typical web browser or Node.js. Actually, nowadays, JavaScript gets embedded into all kinds of devices, from robots to light bulbs. Every single device represents a different type of hosting environment for the JS Engine.
+                <b>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
+                    Such an iteration is called a tick in the Event Loop. Each event is just a function callback</b></p>
+            </div>
+        
+        </section>
+        <section>
+            <div>
+                <h1>6 primitive types undefined</h1>
+                <p>
+                    Boolean: true or false <br>
+                    Number: 1, 6.7, 0xFF<br>
+                    String: "Gorilla and banana"<br>
+                    Symbol: Symbol("name") (starting ES2015)<br>
+                    Null: null<br>
+                    Undefined: undefined.<br>
+                    And a separated object type: {name: "Dmitri"}, ["apple", "orange"].<br>
+                    From 6 primitive types undefined is a special value with its own type Undefined. According to ECMAScript specification. Undefined value primitive value is used when a variable has not been assigned a value.
+                </p>
+            </div>
+        
+        </section>
+    </main>
+</body>
+</html>

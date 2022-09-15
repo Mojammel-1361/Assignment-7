@@ -86,7 +86,7 @@ body {
   color: #9dffad;
 }
 .red {
-  color: #eb6565;
+  color: #e84646;
 }
 .bold {
   font-weight: 700;
@@ -151,7 +151,7 @@ button {
 .card {
   width: 29%;
   height: 100%;
-  padding: 10px;
+  padding:0px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,7 +167,7 @@ button {
   );
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
-  border: 5px solid red;
+
 }
 
 #modal-background {
