@@ -32,9 +32,8 @@
             <div>
                 <h1>How works JavaScript Event Loop</h1>
                 <p> Well start with a somewhat of an odd claim — despite allowing async JavaScript code like the setTimeout we just discussed, until ES6, JavaScript itself has actually never had any direct notion of asynchronicity built into it. The JavaScript engine has never done anything more than executing a single chunk of your program at any given moment. For more details on how JavaScript engines work Googles V8 specifically, check one of our previous articles on the topic.
-                So, who tells the JS Engine to execute chunks of your program? In reality, the JS Engine doesn't run in isolation — it runs inside a hosting environment, which for most developers is the typical web browser or Node.js. Actually, nowadays, JavaScript gets embedded into all kinds of devices, from robots to light bulbs. Every single device represents a different type of hosting environment for the JS Engine.
-                <b>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
-                    Such an iteration is called a tick in the Event Loop. Each event is just a function callback</b></p>
+                So, who tells the JS Engine to execute chunks of your program? In reality, the JS Engine doesn't run in isolation — it runs inside a hosting environment, which for most developers is the typical web browser or Node.js. Actually, nowadays, JavaScript gets embedded into all kinds of devices, from robots to light bulbs. Every single device represents a different type of hosting environment for the JS Engine.<br>
+                <b>The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.Such an iteration is called a tick in the Event Loop. Each event is just a function callback.</b></p>
             </div>
         
         </section>
@@ -42,6 +41,8 @@
             <div>
                 <h1>6 primitive types undefined</h1>
                 <p>
+                    To find the points where the numerical expression is undefined, we set the denominator equal to zero and solve. Once we find the points where the denominator equals zero, we can say that our numerical expression is valid for all numbers except the numbers where it is undefined. undefined is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined. In all non-legacy browsers, undefined is a non-configurable, non-writable property. Even when this is not the case, avoid overriding it. A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.<br>
+                    <b>6 primitive types undefined</b><br>
                     Boolean: true or false <br>
                     Number: 1, 6.7, 0xFF<br>
                     String: "Gorilla and banana"<br>
