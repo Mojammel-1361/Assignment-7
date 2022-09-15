@@ -19,11 +19,13 @@
         </section>
         <section>
             <div>
-                <h1>Differences Between Local Scope and Global Scope Variable</h1>
+                <h1>Differences Between Global Scope and Block scope</h1>
                 <p> <b>Global scope : </b> Global scope contains all of the things defined outside of all code blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure that create a code block. A global variable has global scope. A global variable is accessible from anywhere in the code.</p>
             </div>
             <div>
-                <p> <b>Local Scope: </b> Local scope contains things defined inside code blocks. A local variable has local scope. A local variable is only accessible where its declared. In a scope, you can access variables defined in that scope, or in any parent/ancestor scope. It can only be accessed by the function statements in which it is declared and not by the other functions. </p>
+                <p> <b>Block Scope: </b> The main difference between the local scope and block scope is that the block statements (e.g. if conditions or for loops), don't create a new scope. So the var keyword will not have an effect, because the variables are still in the same scope. ES6 introduced block scope by using the let and const keywords. These two keywords are scoped within the block which are defined. Var can declare a variable either in the global or local scope. The variables that are declared within the block scope are comparable to local ones. They are available within the block that they are defined.
+
+                </p>
             </div>
         </section>
         <section>
